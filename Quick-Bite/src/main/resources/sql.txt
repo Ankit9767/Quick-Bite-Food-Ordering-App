@@ -1,0 +1,36 @@
+register user : 
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@example.com",
+  "phoneNumber": "1234567890",
+  "isActive": true,
+  "role": "USER",
+  "userName": "john_doe",
+  "password": "12345"
+}
+
+
+
+INSERT INTO org_users (
+	id,
+    first_name, 
+    last_name,
+    user_email,
+    phone_number,
+    user_role,
+    username,
+	is_active,
+    password
+) VALUES (
+	8,
+    'at',
+    'at',
+    'anktmb@gmail.com',
+    '123457890',
+    'USER',
+    'at',
+	true,
+	'$2a$10$PgGx/tfsLZenwR5lonxZuegXmf35E.HJJj.dJeh8BzbLP9wpUuTf6'
+)
