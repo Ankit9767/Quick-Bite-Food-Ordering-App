@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f1f1f1, #ff8c00);
+    color: #333;
+    overflow: hidden;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .register-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .register-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff5722;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: #f44336;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.6);
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-btn {
+    background-color: #ff5722;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .primary-btn:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .register-card {
+      width: 80%;
+      padding: 30px;
+    }
+  
+    .register-header {
+      font-size: 2.2rem;
+    }
+  
+    .form-group input {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    .btn {
+      font-size: 1.1rem;
+      padding: 12px 25px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .register-card {
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .register-header {
+      font-size: 1.8rem;
+    }
+  
+    .form-group input {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+  
