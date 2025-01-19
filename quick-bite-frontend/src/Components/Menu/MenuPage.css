@@ -1,0 +1,141 @@
+.menu-container {
+  padding: 20px 40px;
+  color: #030303;
+  height: 100%;
+  overflow-y: auto;
+  transition: margin-left 0.3s ease;
+}
+.menu-container h2{
+  color: #4c4b46;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffcc00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px; 
+  padding-bottom: 40px;
+}
+
+
+.menu-category {
+  background: url('/src/assets/images/menu.jpg') no-repeat center center;
+  background-size: cover;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 320px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.menu-category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.menu-category h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu-category p {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-item-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.menu-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.menu-item-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-item-info h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.menu-item-info p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.menu-item-info .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    padding: 20px;
+  }
+
+  .menu-categories {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-category {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    padding: 10px;
+  }
+
+  .menu-categories {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu-category {
+    width: 100%;
+  }
+}
