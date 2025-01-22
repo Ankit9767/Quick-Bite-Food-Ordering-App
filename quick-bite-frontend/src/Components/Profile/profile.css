@@ -1,0 +1,22 @@
+.profile-container {
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .profile-details {
+    color: black;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-details p {
+    text-align: left; 
+    margin: 10px 0;
+  }
+  
+  .profile-details strong {
+    color: #000000; 
+  }
+  
