@@ -34,7 +34,7 @@ public class MenuController {
     }
 
     @GetMapping("/restaurant/{restaurantId}")
-    public Menu getMenuByRestaurantId(@PathVariable Long restaurantId) {
+    public List<Menu> getMenuByRestaurantId(@PathVariable Long restaurantId) {
         return menuService.getMenuByRestaurantId(restaurantId);
     }
 
