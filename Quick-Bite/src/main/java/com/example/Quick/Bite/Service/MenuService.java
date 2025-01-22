@@ -23,7 +23,8 @@ public class MenuService {
         return menuRepository.findById(id).orElse(null);
     }
 
-    public Menu getMenuByRestaurantId(Long restaurantId) {
+    
+    public List<Menu> getMenuByRestaurantId(Long restaurantId) {
         return menuRepository.findByRestaurantId(restaurantId);
     }
 
