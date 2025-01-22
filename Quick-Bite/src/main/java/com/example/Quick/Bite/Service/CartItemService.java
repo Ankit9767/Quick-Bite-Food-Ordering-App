@@ -30,7 +30,7 @@ public class CartItemService {
     
     
     public CartItem addFoodItemToCart(Long cartId, Long foodItemId, Integer quantity) {
-        
+
         Cart cart = cartRepository.findById(cartId).orElseThrow(() -> new RuntimeException("Cart not found"));
         FoodItem foodItem = foodItemRepository.findById(foodItemId).orElseThrow(() -> new RuntimeException("FoodItem not found"));
 
@@ -52,7 +52,8 @@ public class CartItemService {
 
         return cartItem;
     }
-    
+
+
 
     public CartItem getCartItemById(Long id) {
         return cartItemRepository.findById(id).orElse(null);
@@ -65,7 +66,7 @@ public class CartItemService {
     public CartItem updateCartItem(Long id, CartItem updatedCartItem) {
         List<CartItem> allCartItems = cartItemRepository.findAll();
         for (CartItem cartItem : allCartItems) {
-            System.out.println("CartItem ID: " + cartItem.getId()); 
+            System.out.println("CartItem ID: " + cartItem.getId());
         }
 
         CartItem existingCartItem = cartItemRepository.findById(id)
@@ -74,11 +75,11 @@ public class CartItemService {
         existingCartItem.setQuantity(updatedCartItem.getQuantity());
 
         CartItem updatedItem = cartItemRepository.save(existingCartItem);
-        System.out.println("Updated CartItem: " + updatedItem); 
+        System.out.println("Updated CartItem: " + updatedItem);
 
         return updatedItem;
     }
-    
+
     @Transactional
     public void deleteCartItem(Long id) {
         CartItem cartItem = cartItemRepository.findById(id)
