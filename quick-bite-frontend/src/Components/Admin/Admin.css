@@ -1,0 +1,60 @@
+.dashboard-content {
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .admin-container {
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  .admin-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; 
+  }
+  
+  .admin-options {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px; 
+  }
+  
+  .admin-btn {
+    background-color: #3b3a3b; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .admin-btn:hover {
+    background-color: #f0a926;
+    transform: scale(1.05); 
+  }
+  
+  .admin-btn:active {
+    background-color: #f0a926; 
+    transform: scale(0.98); 
+  }
+  
+  @media (max-width: 768px) {
+    .admin-options {
+      flex-direction: column; 
+    }
+  
+    .admin-btn {
+      width: 100%;
+    }
+  }
+  
