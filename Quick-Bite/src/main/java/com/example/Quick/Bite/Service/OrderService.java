@@ -59,7 +59,7 @@ public class OrderService {
 
         Order order = new Order();
         order.setUser(cart.getUser());
-        order.setRestaurant(cart.getRestaurant()); 
+        order.setRestaurant(cart.getRestaurant());
         order.setOrderStatus(OrderStatus.PENDING);
         order.setTotalPrice(cart.getTotalPrice());
 
@@ -92,8 +92,8 @@ public class OrderService {
             }
         }
 
-        cart.setCartItems(new ArrayList<>()); 
-        cart.setTotalPrice(0.0); 
+        cart.setCartItems(new ArrayList<>());
+        cart.setTotalPrice(0.0);
         cartRepository.save(cart);
 
         return order;
@@ -132,4 +132,9 @@ public class OrderService {
     public void deleteOrder(Long id) {
         orderRepository.deleteById(id);
     }
+    
+    public List<Order> getAllOrders() {
+        return orderRepository.findAll();
+    }
+
 }
