@@ -1,0 +1,261 @@
+.menu-crud-container {
+    color: #333;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-menu-section,
+.edit-menu-section {
+    margin: 20px auto;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    border: 1px solid #494747;
+}
+
+.add-menu-section h3,
+.edit-menu-section h3 {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: #444546;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.add-menu-section input,
+.edit-menu-section input {
+    display: block;
+    height: 25px;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.add-menu-section input:focus,
+.edit-menu-section input:focus {
+    border-color: #ffa200;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Buttons */
+.add-menu-section button,
+.edit-menu-section button {
+    margin-left: 10px;
+    width: 35%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: #373939;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.add-menu-section button:hover,
+.edit-menu-section button:hover {
+    background-color: #f3a41a;
+}
+
+.edit-menu-section .cancel-button {
+    background-color: #373939;
+    margin-top: 10px;
+}
+
+.edit-menu-section .cancel-button:hover {
+    background-color: #f3a41a;
+}
+
+/* Menu List */
+.menu-list {
+    margin-top: 100px;
+    text-align: left;
+}
+
+.menu-list h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid #2f2e2e;
+    background: linear-gradient(135deg, #f1f1f1, #ff8c00);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item h4 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #007bff;
+    text-align: left;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1em;
+    text-align: left;
+}
+
+.menu-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.menu-actions button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-actions button:first-child {
+    background-color: #373939;
+    color: white;
+}
+
+.menu-actions button:first-child:hover {
+    background-color: #f3a41a;
+}
+
+.menu-actions button:last-child {
+    background-color: #373939;
+    color: white;
+}
+
+.menu-actions button:last-child:hover {
+    background-color: #f3a41a;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .add-menu-section,
+    .edit-menu-section {
+        padding: 20px;
+    }
+}
+
+.restaurant-card button {
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #373939;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .restaurant-card button:hover {
+    background-color: #f3a41a;
+    transform: translateY(-2px);
+  }
+  
+  .restaurant-card button:active {
+    background-color: #f3a41a;
+    transform: translateY(0);
+  }
+  
+  .restaurant-card button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .restaurant-card button {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .restaurant-card button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .restaurant-card button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+.add-menu-section select,
+.edit-menu-section select {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.add-menu-section select:focus,
+.edit-menu-section select:focus {
+  border-color: #ffa200;
+  outline: none;
+  background-color: #fff;
+}
+
+.add-menu-section select:hover,
+.edit-menu-section select:hover {
+  background-color: #f1f1f1;
+}
+
+.add-menu-section option,
+.edit-menu-section option {
+  background-color: #fff;
+  color: #333;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.add-menu-section option:hover,
+.edit-menu-section option:hover {
+  background-color: #f3a41a;
+  color: white;
+}
