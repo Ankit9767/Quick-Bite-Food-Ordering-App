@@ -1,0 +1,94 @@
+.orders-crud-container {
+    padding: 20px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .orders-crud-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .orders-table th {
+    background-color: #525355;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .orders-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #b1adad;
+  }
+  
+  .action-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    margin-right: 20px;
+    background-color: #373938;
+  }
+  
+  .delete-btn {
+    background-color: #373938;
+  }
+  
+  .action-btn:hover {
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .orders-table th, .orders-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .action-btn {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .orders-crud-container {
+      padding: 10px;
+    }
+  
+    .orders-crud-container h2 {
+      font-size: 18px;
+    }
+  
+    .orders-table {
+      font-size: 12px;
+    }
+  }
+  
